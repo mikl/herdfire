@@ -1,0 +1,15 @@
+#!/usr/bin/python
+"""
+Herd Fire
+
+A small script to help associate different Firefox profiles with different
+copies of the Firefox app.
+
+This is specific for the way Mac OS X launches apps, and BSD/Linux/Windows
+will find it easier to just create a specific script/launcher/shortcut for
+each profile than to copy the physical Firefox app.
+"""
+from __future__ import with_statement
+
+# TODO: Do something.
+
