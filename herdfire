@@ -72,6 +72,9 @@ def plist_setup(app_path, profile_name):
     # Check to make sure we only mess with copies of Firefox.app,
     # not other apps that might be named "Firefox Somethingorother"
     if plist['CFBundleName'] == 'Firefox':
+        if profile_name:
+            plist['CFBundleName'] = 'Firefox-%s' % profile_name
+
         plist['CFBundleExecutable'] = 'herdfire-launch'
         writePlist(plist, join(app_path, 'Contents/Info.plist'))
 
